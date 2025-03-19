@@ -80,7 +80,7 @@ const IdeaForm: React.FC<IdeaFormProps> = ({ onIdeaAdded }) => {
         <div className="phase-selection">
           <div className="phase-selection-header">
             <label htmlFor="phase-select">
-              คุณอยู่เฟสไหนของการได้รับเงินดิจิตอล
+              คุณอยู่เฟสไหนของการได้รับเงินดิจิทัลวอลเล็ต
             </label>
             <button
               type="button"

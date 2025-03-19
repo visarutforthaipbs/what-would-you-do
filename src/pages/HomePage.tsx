@@ -33,7 +33,7 @@ const HomePage: React.FC = () => {
       <section className="welcome-section">
         <div className="welcome-content">
           <img
-            src="/1000-logo-2.gif"
+            src="/logo-cover-2.gif"
             alt="10,000 บาท"
             className="welcome-logo"
           />
