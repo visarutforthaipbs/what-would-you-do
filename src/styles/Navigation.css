@@ -1,0 +1,89 @@
+.navigation {
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  padding: 8px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo a {
+  text-decoration: none;
+}
+
+.nav-logo-image {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--light-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a.active {
+  color: var(--light-color);
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.partner-logos {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.partner-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    padding: 6px 0;
+  }
+
+  .partner-logos {
+    gap: 20px;
+  }
+
+  .partner-logo {
+    height: 35px;
+  }
+}

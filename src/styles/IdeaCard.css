@@ -1,0 +1,210 @@
+.idea-card {
+  background-color: var(--light-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.idea-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.idea-content {
+  margin-bottom: 15px;
+}
+
+.idea-text {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.idea-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.idea-date {
+  font-size: 0.8rem;
+  color: var(--dark-color);
+  opacity: 0.6;
+}
+
+.idea-phase {
+  font-size: 0.8rem;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+.idea-actions {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
+}
+
+.idea-actions button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  background-color: var(--gray-color);
+  color: var(--dark-color);
+  font-size: 0.9rem;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.idea-actions button:hover:not(:disabled) {
+  background-color: var(--border-color);
+}
+
+.like-button {
+  color: var(--primary-color);
+}
+
+.like-button:hover:not(:disabled) {
+  background-color: rgba(230, 0, 35, 0.1) !important;
+}
+
+.like-button.liking {
+  animation: pulse 0.5s infinite;
+}
+
+/* Facebook share button */
+.share-button.facebook {
+  background-color: #3b5998 !important;
+  color: white !important;
+}
+
+.share-button.facebook:hover:not(:disabled) {
+  background-color: #2d4373 !important;
+}
+
+.share-button.facebook .share-option-icon {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.share-button.sharing {
+  animation: pulse 0.5s infinite;
+}
+
+.report-button.reporting {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+}
+
+.like-icon,
+.report-icon,
+.share-option-icon {
+  font-size: 1.2rem;
+}
+
+.like-count {
+  font-weight: 600;
+}
+
+.report-form-container {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dashed var(--border-color);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-family: "Kanit", sans-serif;
+  font-size: 0.9rem;
+  resize: none;
+}
+
+.report-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.report-form-footer button {
+  padding: 5px 15px;
+  font-size: 0.8rem;
+}
+
+.report-form-footer button[type="submit"] {
+  background-color: var(--danger-color);
+  color: var(--light-color);
+}
+
+.report-confirmation {
+  text-align: center;
+  padding: 10px;
+  background-color: var(--success-color);
+  color: var(--light-color);
+  border-radius: 5px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for the pulse effect */
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .idea-card {
+    padding: 15px;
+  }
+
+  .idea-text {
+    font-size: 1rem;
+  }
+
+  .idea-actions {
+    flex-wrap: wrap;
+  }
+
+  .idea-actions button {
+    flex: 1;
+    justify-content: center;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+}

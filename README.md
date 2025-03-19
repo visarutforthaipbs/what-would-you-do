@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# มี 10,000 บาทจะทำอะไรดี? (What Would You Do with 10,000 Baht?)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+เว็บแอปพลิเคชันสนุกๆ ที่ให้ผู้ใช้แชร์ไอเดียสร้างสรรค์เกี่ยวกับการใช้เงิน 10,000 บาท ผู้ใช้สามารถแชร์ไอเดียของตัวเอง กดไลค์ไอเดียของคนอื่น และดูอันดับไอเดียที่ได้รับความนิยมสูงสุด
 
-## Available Scripts
+A fun and casual web app that allows users to share creative ideas about how they would spend 10,000 Baht. Users can submit their ideas, like others' ideas, and see a leaderboard of the most popular ideas.
 
-In the project directory, you can run:
+## กลุ่มเป้าหมาย (Target Audience)
 
-### `npm start`
+แอปพลิเคชันนี้ออกแบบมาสำหรับกลุ่มวัยรุ่นและวัยเรียน อายุ 16-20 ปี ด้วยการใช้ภาษาที่เป็นกันเองและการออกแบบที่ทันสมัย
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This application is designed for Thai teenagers and young adults aged 16-20, with casual language and modern design.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## คุณสมบัติ (Features)
 
-### `npm test`
+- แชร์ไอเดียการใช้เงิน 10,000 บาทของคุณ
+- เรียกดูไอเดียจากผู้ใช้คนอื่น
+- กดไลค์ไอเดียที่คุณชอบ
+- จัดเรียงไอเดียตาม "ล่าสุด" หรือ "ยอดนิยม"
+- ดูไอเดียแบบสุ่มด้วยปุ่ม "สุ่มไอเดีย"
+- ดู 10 ไอเดียยอดนิยมสูงสุดที่หน้า "ไอเดียฮิต"
+- แชร์ไอเดียเป็นรูปภาพ
+- รายงานเนื้อหาที่ไม่เหมาะสม
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## เทคโนโลยีที่ใช้ (Tech Stack)
 
-### `npm run build`
+- **Frontend**: React with TypeScript
+- **Backend**: Firebase (Firestore)
+- **Routing**: React Router
+- **Styling**: CSS
+- **Image Generation**: html2canvas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## วิธีการติดตั้ง (Setup Instructions)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Set up Firebase:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - Create a Firebase project at [https://console.firebase.google.com/](https://console.firebase.google.com/)
+   - Enable Firestore in your project
+   - Get your Firebase configuration (apiKey, authDomain, etc.)
+   - Update the configuration in `src/firebase/config.ts`
 
-### `npm run eject`
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## โครงสร้างโปรเจค (Project Structure)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `/src/components`: React components
+- `/src/pages`: Page components
+- `/src/firebase`: Firebase configuration and services
+- `/src/hooks`: Custom React hooks
+- `/src/types`: TypeScript type definitions
+- `/src/utils`: Utility functions
+- `/src/styles`: CSS files
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## การเผยแพร่ (Deployment)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This app can be deployed to platforms like Vercel, Netlify, or Firebase Hosting.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT

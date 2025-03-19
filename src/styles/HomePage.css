@@ -1,0 +1,107 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-section {
+  background: var(--primary-color);
+  min-height: 100vh;
+  color: var(--light-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+.welcome-content {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.welcome-logo {
+  width: 500px;
+  height: auto;
+  margin-bottom: 3rem;
+  animation: bounce 2s infinite;
+  max-width: 90vw;
+}
+
+.welcome-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.welcome-content p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background-color: var(--light-color);
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.cta-button:active {
+  transform: translateY(1px);
+}
+
+.container {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    min-height: 100vh;
+  }
+
+  .welcome-logo {
+    width: 300px;
+  }
+
+  .welcome-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .welcome-content p {
+    font-size: 1.4rem;
+  }
+
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 30px 15px;
+  }
+}
